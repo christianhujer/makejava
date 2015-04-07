@@ -1,4 +1,4 @@
-ifeq (,$(MAKEJAVA/JAVA.MAK))
+ifeq (undefined,$(origin MAKEJAVA/JAVA.MAK))
 MAKEJAVA/JAVA.MAK:=$(lastword $(MAKEFILE_LIST))
 
 # File to include from your Makefile like this:
